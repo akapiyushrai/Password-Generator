@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background:#0a1f29;
+    color: #fff;
+}
+
+.container {
+    margin: 12% auto;
+    width: 90%;
+    max-width: 700px;
+    padding: 0 5%;
+}
+
+.display {
+    width: 100%;
+    margin: 50px 0 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 1.2rem;
+    border-radius: 5px;
+    flex-wrap: wrap; /* allow elements to wrap on small screens */
+    gap: 10px;
+}
+
+.container h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 1.3;
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+
+.display img {
+    width: 28px;
+    cursor: pointer;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 1.5rem;
+    width: 80%;
+    background: transparent;
+    color: #333;
+}
+
+.container button img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.container button {
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ✅ MEDIA QUERY for phones */
+@media (max-width: 600px) {
+    .container {
+        margin: 20% auto;
+        padding: 0 5%;
+    }
+
+    .container h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .display {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+    }
+
+    .display input {
+        font-size: 1.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .display img {
+        align-self: center;
+    }
+
+    .container button {
+        width: 100%;
+        padding: 0.9rem;
+        font-size: 1.2rem;
+    }
+}
